@@ -91,11 +91,11 @@
 				5EFC3B2D1518C79600F9579F /* ViewController.m */,
 				5EFC3B2F1518C79600F9579F /* ViewController_iPhone.xib */,
 				5EFC3B321518C79600F9579F /* ViewController_iPad.xib */,
-				5EFC3B211518C79600F9579F /* Supporting Files */,
 				5EFC3B3A1518C7E500F9579F /* AngryBirdView.h */,
 				5EFC3B3B1518C7E500F9579F /* AngryBirdView.m */,
 				5EFC3B3D1518C9B400F9579F /* AngryBirdBackgroundView.h */,
 				5EFC3B3E1518C9B400F9579F /* AngryBirdBackgroundView.m */,
+				5EFC3B211518C79600F9579F /* Supporting Files */,
 			);
 			path = AngryBird;
 			sourceTree = "<group>";
@@ -262,12 +262,12 @@
 		5EFC3B381518C79600F9579F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Philip Kluz (MBZJC66V5D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AngryBird/AngryBird-Prefix.pch";
 				INFOPLIST_FILE = "AngryBird/AngryBird-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "237C3BC4-3864-4A41-BCF4-8171A14134FF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
