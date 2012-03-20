@@ -65,12 +65,7 @@
 {
     //// General Declarations
 	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-	/*CGContextRef context = UIGraphicsGetCurrentContext();
-	
-	CGFloat clearColorComponents[4] = {0.0, 0.0, 0.0, 0.0};
-	CGContextSetFillColor(context, clearColorComponents);
-	CGContextFillRect(context, rect);
-	*/
+
 	//// Color Declarations
 	UIColor* black = [UIColor colorWithRed: 0 green: 0 blue: 0 alpha: 1];
 	UIColor* r212g0b46 = [UIColor colorWithRed: 0.79 green: 0 blue: 0.14 alpha: 1];

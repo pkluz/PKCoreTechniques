@@ -302,6 +302,7 @@
 				5EFC3B391518C79600F9579F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
