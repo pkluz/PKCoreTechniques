@@ -37,7 +37,6 @@
 								kCGGradientDrawsBeforeStartLocation | kCGGradientDrawsAfterEndLocation);
 	CGContextRestoreGState(context);
 	
-	
 	//// Cleanup
 	CGGradientRelease(r128g236b251TOr15g121b159);
 	CGColorSpaceRelease(colorSpace);

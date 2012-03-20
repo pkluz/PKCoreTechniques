@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AngryBirdView.h"
 
 @interface ViewController ()
 
@@ -14,13 +15,23 @@
 
 @implementation ViewController
 
+@synthesize iPhoneScrollView;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
+	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+	{
+		self.iPhoneScrollView.contentSize = CGSizeMake(512.0f, 512.0f);
+		AngryBirdView *angryBird = [[AngryBirdView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 512.0f, 512.0f)];
+		[self.iPhoneScrollView addSubview:angryBird];
+	}
 }
 
 - (void)viewDidUnload
 {
+	self.iPhoneScrollView = nil;
     [super viewDidUnload];
 }
 

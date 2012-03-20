@@ -8,13 +8,69 @@
 
 #import "AngryBirdView.h"
 
+@interface AngryBirdView()
+
+- (void)commonInit;
+
+@end
+
 @implementation AngryBirdView
+
+#pragma mark - Initialization
+
+- (id)initWithFrame:(CGRect)frame
+{
+	self = [super initWithFrame:frame];
+	
+	if (nil != self)
+	{
+		[self commonInit];
+	}
+	
+	return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+	self = [super initWithCoder:aDecoder];
+	
+	if (nil != self)
+	{
+		[self commonInit];
+	}
+	
+	return self;
+}
+
+- (id)init
+{
+	self = [super init];
+	
+	if (nil != self)
+	{
+		[self commonInit];
+	}
+	
+	return self;
+}
+
+- (void)commonInit
+{
+	self.backgroundColor = [UIColor clearColor];
+}
+
+#pragma mark - Drawing
 
 - (void)drawRect:(CGRect)rect
 {
     //// General Declarations
 	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+	/*CGContextRef context = UIGraphicsGetCurrentContext();
 	
+	CGFloat clearColorComponents[4] = {0.0, 0.0, 0.0, 0.0};
+	CGContextSetFillColor(context, clearColorComponents);
+	CGContextFillRect(context, rect);
+	*/
 	//// Color Declarations
 	UIColor* black = [UIColor colorWithRed: 0 green: 0 blue: 0 alpha: 1];
 	UIColor* r212g0b46 = [UIColor colorWithRed: 0.79 green: 0 blue: 0.14 alpha: 1];
