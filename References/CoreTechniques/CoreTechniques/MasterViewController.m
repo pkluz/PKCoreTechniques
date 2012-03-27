@@ -12,7 +12,7 @@
 @interface MasterViewController ()
 
 #pragma mark - Private Properties
-@property (nonatomic, strong) NSMutableArray *objects;
+@property (nonatomic, strong, readwrite) NSMutableDictionary *dataSource;
 
 #pragma mark - Private Methods
 
@@ -21,7 +21,7 @@
 @implementation MasterViewController
 
 @synthesize detailViewController = _detailViewController;
-@synthesize objects = _objects;
+@synthesize dataSource = _dataSource;
 							
 - (void)viewDidLoad
 {
@@ -31,21 +31,13 @@
 	self.clearsSelectionOnViewWillAppear = NO;
 	self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
 	
-	self.objects = [[NSMutableArray alloc] initWithCapacity:8];
-	
-	[self.objects addObject:@"Color Fill"];
-	[self.objects addObject:@"Gradient Fill (Linear)"];
-	[self.objects addObject:@"Gradient Fill (Radial)"];
-	[self.objects addObject:@"Images"];
-	[self.objects addObject:@"Paths"];
-	[self.objects addObject:@"Bezier Curves"];
-	[self.objects addObject:@"Clipping"];
-	[self.objects addObject:@"Clipping (Even-Odd)"];
+	NSString *dataSourceFilePath = [[NSBundle mainBundle] pathForResource:@"TopicsDataSource" ofType:@"plist"];
+	self.dataSource = [[NSMutableDictionary alloc] initWithContentsOfFile:dataSourceFilePath];
 }
 
 - (void)viewDidUnload
 {
-	self.objects = nil;
+	self.dataSource = nil;
 	self.detailViewController = nil;
 	
     [super viewDidUnload];
@@ -60,12 +52,22 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-	return 1;
+	return [[self.dataSource objectForKey:@"DataSource"] count];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+	return 22.0f;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+	return [[[self.dataSource objectForKey:@"DataSource"] objectAtIndex:section] objectForKey:@"Title"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return [self.objects count];
+	return [[[[self.dataSource objectForKey:@"DataSource"] objectAtIndex:section] objectForKey:@"Topics"] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -79,14 +81,14 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
 	
-	cell.textLabel.text = [self.objects objectAtIndex:indexPath.row];
+	cell.textLabel.text = [[[[self.dataSource objectForKey:@"DataSource"] objectAtIndex:indexPath.section] objectForKey:@"Topics"] objectAtIndex:indexPath.row];
 	
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *topic = [self.objects objectAtIndex:indexPath.row];
+    NSString *topic = [[[[self.dataSource objectForKey:@"DataSource"] objectAtIndex:indexPath.section] objectForKey:@"Topics"] objectAtIndex:indexPath.row];
     self.detailViewController.topic = topic;
 }
 

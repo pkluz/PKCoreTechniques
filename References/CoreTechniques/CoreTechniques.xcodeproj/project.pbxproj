@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E1AD49215218F720065984A /* TapAndMoveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1AD49115218F720065984A /* TapAndMoveView.m */; };
+		5E1AD494152191DC0065984A /* TopicsDataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E1AD493152191DC0065984A /* TopicsDataSource.plist */; };
 		5E1C82111520B36F00ABB2BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1C82101520B36F00ABB2BD /* UIKit.framework */; };
 		5E1C82131520B36F00ABB2BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1C82121520B36F00ABB2BD /* Foundation.framework */; };
 		5E1C82151520B36F00ABB2BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1C82141520B36F00ABB2BD /* CoreGraphics.framework */; };
@@ -30,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E1AD49015218F720065984A /* TapAndMoveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TapAndMoveView.h; path = demos/TapAndMoveView.h; sourceTree = "<group>"; };
+		5E1AD49115218F720065984A /* TapAndMoveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TapAndMoveView.m; path = demos/TapAndMoveView.m; sourceTree = "<group>"; };
+		5E1AD493152191DC0065984A /* TopicsDataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TopicsDataSource.plist; sourceTree = "<group>"; };
 		5E1C820C1520B36F00ABB2BD /* CoreTechniques.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreTechniques.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E1C82101520B36F00ABB2BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5E1C82121520B36F00ABB2BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -81,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E1AD48E15218F500065984A /* UIKit Animations */ = {
+			isa = PBXGroup;
+			children = (
+				5E1AD49015218F720065984A /* TapAndMoveView.h */,
+				5E1AD49115218F720065984A /* TapAndMoveView.m */,
+			);
+			name = "UIKit Animations";
+			sourceTree = "<group>";
+		};
 		5E1C82011520B36F00ABB2BD = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +155,7 @@
 				5E1C82281520B36F00ABB2BD /* MasterViewController.xib */,
 				5E1C82251520B36F00ABB2BD /* DetailViewController.h */,
 				5E1C82261520B36F00ABB2BD /* DetailViewController.m */,
+				5E1AD493152191DC0065984A /* TopicsDataSource.plist */,
 			);
 			name = "Application Logic";
 			sourceTree = "<group>";
@@ -150,6 +165,7 @@
 			children = (
 				5E1C826B1520D83200ABB2BD /* CoreGraphics */,
 				5E1C826C1520D84200ABB2BD /* CoreAnimation */,
+				5E1AD48E15218F500065984A /* UIKit Animations */,
 			);
 			name = Demos;
 			sourceTree = "<group>";
@@ -303,6 +319,7 @@
 				5E1C822A1520B36F00ABB2BD /* MasterViewController.xib in Resources */,
 				5E1C825A1520C8AC00ABB2BD /* tombraider.png in Resources */,
 				5E1C826A1520D54600ABB2BD /* LICENSE in Resources */,
+				5E1AD494152191DC0065984A /* TopicsDataSource.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +342,7 @@
 				5E1C82581520C89C00ABB2BD /* ImageView.m in Sources */,
 				5E1C825D1520CD7400ABB2BD /* ClippingView.m in Sources */,
 				5E1C82601520D24600ABB2BD /* ClippingEOView.m in Sources */,
+				5E1AD49215218F720065984A /* TapAndMoveView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

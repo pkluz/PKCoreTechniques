@@ -8,7 +8,7 @@
 
 #import "DetailViewController.h"
 
-// Demo Files
+// Demo Files for CoreGraphics
 #import "ColorFillView.h"
 #import "GradientFillLinearView.h"
 #import "GradientFillRadialView.h"
@@ -17,6 +17,9 @@
 #import "BezierCurveView.h"
 #import "ClippingView.h"
 #import "ClippingEOView.h"
+
+// Demo Files for UIKit (Animation)
+#import "TapAndMoveView.h"
 
 @interface DetailViewController ()
 
@@ -78,6 +81,10 @@
 		{
 			self.view = [[ClippingEOView alloc] initWithFrame:self.view.frame];
 		}
+		else if ([self.topic isEqualToString:@"Translation"])
+		{
+			self.view = [[TapAndMoveView alloc] initWithFrame:self.view.frame];
+		}
 		else
 		{
 			// No valid topic selected.
@@ -99,6 +106,17 @@
 	{
         [self.masterPopoverController dismissPopoverAnimated:YES];
     } 
+}
+
+#pragma mark - Touches
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	if ([self.topic isEqualToString:@"Translation"] && [self.view isKindOfClass:[TapAndMoveView class]])
+	{
+		TapAndMoveView *view = (TapAndMoveView *)self.view;
+		[view didTapView];
+	}
 }
 
 #pragma mark - View lifecycle

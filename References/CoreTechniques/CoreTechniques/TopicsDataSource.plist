@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DataSource</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>CoreGraphics</string>
+			<key>Topics</key>
+			<array>
+				<string>Color Fill</string>
+				<string>Gradient Fill (Linear)</string>
+				<string>Gradient Fill (Radial)</string>
+				<string>Images</string>
+				<string>Paths</string>
+				<string>Bezier Curves</string>
+				<string>Clipping</string>
+				<string>Clipping (Even-Odd)</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>UIKit (Animation)</string>
+			<key>Topics</key>
+			<array>
+				<string>Translation</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>CoreAnimation</string>
+			<key>Topics</key>
+			<array>
+				<string>Implicit Animations</string>
+				<string>Explicit Animations</string>
+				<string>Linear Transformations</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
