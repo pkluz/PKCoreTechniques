@@ -25,6 +25,7 @@
 			<key>Topics</key>
 			<array>
 				<string>Translation</string>
+				<string>Translation (Hit Test)</string>
 			</array>
 		</dict>
 		<dict>
@@ -32,9 +33,7 @@
 			<string>CoreAnimation</string>
 			<key>Topics</key>
 			<array>
-				<string>Implicit Animations</string>
-				<string>Explicit Animations</string>
-				<string>Linear Transformations</string>
+				<string>CoverFlow</string>
 			</array>
 		</dict>
 	</array>

@@ -9,6 +9,8 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 
+#import "CoverFlowViewController.h"
+
 @interface MasterViewController ()
 
 #pragma mark - Private Properties
@@ -89,7 +91,16 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *topic = [[[[self.dataSource objectForKey:@"DataSource"] objectAtIndex:indexPath.section] objectForKey:@"Topics"] objectAtIndex:indexPath.row];
-    self.detailViewController.topic = topic;
+	
+	if ([topic isEqualToString:@"CoverFlow"])
+	{
+		UINavigationController *modalNavigationController = [[UINavigationController alloc] initWithRootViewController:[[CoverFlowViewController alloc] initWithNibName:@"CoverFlowViewController" bundle:nil]];
+		[self presentModalViewController:modalNavigationController animated:YES];
+	}
+	else
+	{
+		self.detailViewController.topic = topic;
+	}
 }
 
 @end

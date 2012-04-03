@@ -29,6 +29,11 @@
 		5E1C825D1520CD7400ABB2BD /* ClippingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C825C1520CD7400ABB2BD /* ClippingView.m */; };
 		5E1C82601520D24600ABB2BD /* ClippingEOView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C825F1520D24600ABB2BD /* ClippingEOView.m */; };
 		5E1C826A1520D54600ABB2BD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5E1C82691520D54600ABB2BD /* LICENSE */; };
+		5E8D33191528FCE7004B7442 /* TapAndMoveViewWithHitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D33181528FCE7004B7442 /* TapAndMoveViewWithHitTest.m */; };
+		5ED1BA32152289E200A62AA5 /* CoverFlowViewController~iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ED1BA31152289E200A62AA5 /* CoverFlowViewController~iPad.xib */; };
+		5ED2B8931522652F00CB9077 /* CoverFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED2B8921522652F00CB9077 /* CoverFlowView.m */; };
+		5ED2B896152266C700CB9077 /* CoverFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED2B895152266C700CB9077 /* CoverFlowViewController.m */; };
+		5ED2B8991522699400CB9077 /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED2B8981522699300CB9077 /* CoverView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +74,15 @@
 		5E1C825E1520D24600ABB2BD /* ClippingEOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClippingEOView.h; path = demos/ClippingEOView.h; sourceTree = "<group>"; };
 		5E1C825F1520D24600ABB2BD /* ClippingEOView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClippingEOView.m; path = demos/ClippingEOView.m; sourceTree = "<group>"; };
 		5E1C82691520D54600ABB2BD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5E8D33171528FCE7004B7442 /* TapAndMoveViewWithHitTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TapAndMoveViewWithHitTest.h; path = demos/TapAndMoveViewWithHitTest.h; sourceTree = "<group>"; };
+		5E8D33181528FCE7004B7442 /* TapAndMoveViewWithHitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TapAndMoveViewWithHitTest.m; path = demos/TapAndMoveViewWithHitTest.m; sourceTree = "<group>"; };
+		5ED1BA31152289E200A62AA5 /* CoverFlowViewController~iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "CoverFlowViewController~iPad.xib"; path = "demos/CoverFlowViewController~iPad.xib"; sourceTree = "<group>"; };
+		5ED2B8911522652F00CB9077 /* CoverFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoverFlowView.h; path = demos/CoverFlowView.h; sourceTree = "<group>"; };
+		5ED2B8921522652F00CB9077 /* CoverFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoverFlowView.m; path = demos/CoverFlowView.m; sourceTree = "<group>"; };
+		5ED2B894152266C700CB9077 /* CoverFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoverFlowViewController.h; path = demos/CoverFlowViewController.h; sourceTree = "<group>"; };
+		5ED2B895152266C700CB9077 /* CoverFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoverFlowViewController.m; path = demos/CoverFlowViewController.m; sourceTree = "<group>"; };
+		5ED2B8971522699300CB9077 /* CoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoverView.h; path = demos/CoverView.h; sourceTree = "<group>"; };
+		5ED2B8981522699300CB9077 /* CoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoverView.m; path = demos/CoverView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +103,8 @@
 		5E1AD48E15218F500065984A /* UIKit Animations */ = {
 			isa = PBXGroup;
 			children = (
-				5E1AD49015218F720065984A /* TapAndMoveView.h */,
-				5E1AD49115218F720065984A /* TapAndMoveView.m */,
+				5E8D331A1528FCEC004B7442 /* Translation */,
+				5E8D331B1528FCF2004B7442 /* Translation (Hit Test) */,
 			);
 			name = "UIKit Animations";
 			sourceTree = "<group>";
@@ -164,8 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				5E1C826B1520D83200ABB2BD /* CoreGraphics */,
-				5E1C826C1520D84200ABB2BD /* CoreAnimation */,
 				5E1AD48E15218F500065984A /* UIKit Animations */,
+				5E1C826C1520D84200ABB2BD /* CoreAnimation */,
 			);
 			name = Demos;
 			sourceTree = "<group>";
@@ -261,8 +275,41 @@
 		5E1C826C1520D84200ABB2BD /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				5E8D331C15290C2F004B7442 /* CoverFlow */,
 			);
 			name = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		5E8D331A1528FCEC004B7442 /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+				5E1AD49015218F720065984A /* TapAndMoveView.h */,
+				5E1AD49115218F720065984A /* TapAndMoveView.m */,
+			);
+			name = Translation;
+			sourceTree = "<group>";
+		};
+		5E8D331B1528FCF2004B7442 /* Translation (Hit Test) */ = {
+			isa = PBXGroup;
+			children = (
+				5E8D33171528FCE7004B7442 /* TapAndMoveViewWithHitTest.h */,
+				5E8D33181528FCE7004B7442 /* TapAndMoveViewWithHitTest.m */,
+			);
+			name = "Translation (Hit Test)";
+			sourceTree = "<group>";
+		};
+		5E8D331C15290C2F004B7442 /* CoverFlow */ = {
+			isa = PBXGroup;
+			children = (
+				5ED2B894152266C700CB9077 /* CoverFlowViewController.h */,
+				5ED2B895152266C700CB9077 /* CoverFlowViewController.m */,
+				5ED1BA31152289E200A62AA5 /* CoverFlowViewController~iPad.xib */,
+				5ED2B8911522652F00CB9077 /* CoverFlowView.h */,
+				5ED2B8921522652F00CB9077 /* CoverFlowView.m */,
+				5ED2B8971522699300CB9077 /* CoverView.h */,
+				5ED2B8981522699300CB9077 /* CoverView.m */,
+			);
+			name = CoverFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +367,7 @@
 				5E1C825A1520C8AC00ABB2BD /* tombraider.png in Resources */,
 				5E1C826A1520D54600ABB2BD /* LICENSE in Resources */,
 				5E1AD494152191DC0065984A /* TopicsDataSource.plist in Resources */,
+				5ED1BA32152289E200A62AA5 /* CoverFlowViewController~iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +391,10 @@
 				5E1C825D1520CD7400ABB2BD /* ClippingView.m in Sources */,
 				5E1C82601520D24600ABB2BD /* ClippingEOView.m in Sources */,
 				5E1AD49215218F720065984A /* TapAndMoveView.m in Sources */,
+				5ED2B8931522652F00CB9077 /* CoverFlowView.m in Sources */,
+				5ED2B896152266C700CB9077 /* CoverFlowViewController.m in Sources */,
+				5ED2B8991522699400CB9077 /* CoverView.m in Sources */,
+				5E8D33191528FCE7004B7442 /* TapAndMoveViewWithHitTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

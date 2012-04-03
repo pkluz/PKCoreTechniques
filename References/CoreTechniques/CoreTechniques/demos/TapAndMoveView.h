@@ -11,8 +11,10 @@
 @interface TapAndMoveView : UIView
 
 #pragma mark - Public Properties
+@property (nonatomic, strong, readonly) UIView *redBox;
 
 #pragma mark - Public Methods
+// Note: Tap recognition is implemented in the associated ViewController! In our case: The DetailViewController.
 - (void)didTapView;
 
 @end

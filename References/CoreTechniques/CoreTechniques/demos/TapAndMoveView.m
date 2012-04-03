@@ -85,16 +85,16 @@ enum RedBoxPosition
 
 - (void)didTapView
 {
-	[UIView animateWithDuration:3.0f animations:^
+	[UIView animateWithDuration:1.0f animations:^
 	{
 		if (_currentPosition == RedBoxPositionIsLeft)
 		{
-			self.redBox.frame = CGRectOffset(self.redBox.frame, 200.0f, 0.0f);
+			self.redBox.frame = CGRectOffset(self.redBox.frame, 550.0f, 0.0f);
 			_currentPosition = RedBoxPositionIsRight;
 		}
 		else
 		{
-			self.redBox.frame = CGRectOffset(self.redBox.frame, -200.0f, 0.0f);
+			self.redBox.frame = CGRectOffset(self.redBox.frame, -550.0f, 0.0f);
 			_currentPosition = RedBoxPositionIsLeft;
 		}		
 	}];

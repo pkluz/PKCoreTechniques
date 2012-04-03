@@ -16,7 +16,7 @@
 	[super drawRect:rect];
 	
 	CGContextRef context = UIGraphicsGetCurrentContext();
-	CGFloat redColor[4] = {1.0f, 0.0f, 0.0f, 1.0f};
+	CGFloat redColor[4] = {1.0f, 0.5f, 0.0f, 1.0f};
 	CGContextSetFillColor(context, redColor);
 	CGContextFillRect(context, rect);
 }

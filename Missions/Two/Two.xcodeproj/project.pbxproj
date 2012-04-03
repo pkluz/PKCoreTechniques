@@ -282,6 +282,7 @@
 				5E1AD47A1521790A0065984A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

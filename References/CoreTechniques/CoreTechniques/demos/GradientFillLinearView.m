@@ -15,7 +15,6 @@
 { 
     [super drawRect:rect];
     CGContextRef context = UIGraphicsGetCurrentContext();
-	
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
 	
     CGFloat colors[8] = {33.0f/255.0f, 102.0f/255.0f, 133.0f/255.0f, 1.0f,		// Dark Blue Color
@@ -29,6 +28,11 @@
 	
     CGGradientRelease(gradient);
     CGColorSpaceRelease(colorSpace);
+	
+	CGFloat yellow[4] = {1.0f, 1.0f, 0.0f, 1.0f};
+	CGContextSetFillColor(context, yellow);
+	CGRect yellowRect = CGRectMake(0.0f, 20.0f, 20.0f, 20.0f);
+	CGContextFillRect(context, yellowRect);
 }
 
 @end

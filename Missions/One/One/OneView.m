@@ -14,30 +14,17 @@
 {
     [super drawRect:rect];
 	
-	CGContextRef context = UIGraphicsGetCurrentContext();
-	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+	// From now on we'll be drawing with red paint!
+	[[UIColor redColor] setStroke];
 	
-	CGFloat blueColor[4] = {0.0f, 0.0f, 1.0f, 1.0f};
-	CGFloat blackColor[4] = {0.0f, 0.0f, 0.0f, 1.0f};
+	// Create a straight line.
+	UIBezierPath *path = [UIBezierPath bezierPath];
+	path.lineWidth = 5.0f;
+	[path moveToPoint:CGPointMake(50.0f, 50.0f)];
+	[path addLineToPoint:CGPointMake(400.0f, 400.0f)];
+	[path stroke];
 	
-	CGMutablePathRef trianglePath = CGPathCreateMutable();
-	
-	CGPathMoveToPoint(trianglePath, NULL, 100.0f, 400.0f);
-	
-	CGPathAddLineToPoint(trianglePath, NULL, 400.0f, 400.0f);
-	CGPathAddLineToPoint(trianglePath, NULL, 400.0f, 100.0f);
-	
-	CGPathCloseSubpath(trianglePath);
-	
-	CGContextAddPath(context, trianglePath);
-	
-	CGContextSetLineWidth(context, 8.0f);
-	CGContextSetStrokeColor(context, blueColor);
-	CGContextSetFillColor(context, blackColor);
-	
-	CGContextDrawPath(context, kCGPathFillStroke);
-	
-	CGColorSpaceRelease(colorSpace);
+	// TODO 1: Turn the line above into a triangle.
 }
 
 @end

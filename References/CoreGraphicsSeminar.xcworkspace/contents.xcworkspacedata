@@ -7,7 +7,4 @@
    <FileRef
       location = "group:CoreTechniques/CoreTechniques.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:CoreWaveform/CoreWaveform.xcodeproj">
-   </FileRef>
 </Workspace>

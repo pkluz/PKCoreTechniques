@@ -20,6 +20,9 @@
 
 // Demo Files for UIKit (Animation)
 #import "TapAndMoveView.h"
+#import "TapAndMoveViewWithHitTest.h"
+
+// Demo Files for CoreAnimation
 
 @interface DetailViewController ()
 
@@ -85,6 +88,10 @@
 		{
 			self.view = [[TapAndMoveView alloc] initWithFrame:self.view.frame];
 		}
+		else if ([self.topic isEqualToString:@"Translation (Hit Test)"])
+		{
+			self.view = [[TapAndMoveViewWithHitTest alloc] initWithFrame:self.view.frame];
+		}
 		else
 		{
 			// No valid topic selected.
@@ -116,6 +123,18 @@
 	{
 		TapAndMoveView *view = (TapAndMoveView *)self.view;
 		[view didTapView];
+	}
+	else if ([self.topic isEqualToString:@"Translation (Hit Test)"] && [self.view isKindOfClass:[TapAndMoveViewWithHitTest class]])
+	{
+		TapAndMoveViewWithHitTest *view = (TapAndMoveViewWithHitTest *)self.view;
+		
+		UITouch *touch = (UITouch *)[touches anyObject];
+		UIView *viewHit = [view hitTest:[touch locationInView:view] withEvent:event];
+		
+		if ([viewHit isEqual:view.redBox])
+		{
+			[view didTapRedBox];
+		}
 	}
 }
 

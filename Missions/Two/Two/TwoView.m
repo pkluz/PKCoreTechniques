@@ -17,47 +17,19 @@
 {
     [super drawRect:rect];
 	
-	// Common Stuff:
 	CGRect box = CGRectMake(200.0f, 200.0f, 400.0f, 400.0f);
 	
 	CGContextRef context = UIGraphicsGetCurrentContext();
 	
-	CGFloat blueColor[4] = {0.0f, 0.0f, 1.0f, 1.0f};
-	CGFloat blackColorAlpha20[4] = {0.0f, 0.0f, 0.0f, 0.2f};
+	// Define some colors
+	CGFloat redColor[4] = {1.0f, 0.0f, 0.0f, 1.0f};
+	CGFloat blueColor[4] = {0.1f, 0.1f, 0.5f, 1.0f};
+ 
+	// TODO 1: Fill the 'box' using blueColor
 	
-	CGContextSetLineWidth(context, BORDER_WIDTH);
-	CGContextSetStrokeColor(context, blueColor);
-	CGContextSetFillColor(context, blackColorAlpha20);
-	
-	// Not-Good-Enough-Way:
-	/*
-	CGContextSetShadowWithColor(context, CGSizeMake(0.0f, 0.0f), 20.0f, [UIColor blackColor].CGColor);
-	CGContextAddRect(context, box);
-	CGContextDrawPath(context, kCGPathFillStroke);
-	*/
-	
-	// Good Way:
-	CGRect outerClip = CGRectInset(box, -BOX_SHADOW_BLUR_SAFE_ZONE, -BOX_SHADOW_BLUR_SAFE_ZONE);
-	CGRect innerClip = CGRectInset(box, -BORDER_WIDTH/2.0f, -BORDER_WIDTH/2.0f);
-	
-	CGContextSaveGState(context);
-	
-	CGContextAddRect(context, outerClip);
-	CGContextAddRect(context, innerClip);
-	
-	CGContextEOClip(context);
-	
-	CGContextAddRect(context, box);
-	
-	CGContextSetShadowWithColor(context, CGSizeMake(0.0f, 0.0f), 20.0f, [UIColor blackColor].CGColor);
-	
-	CGContextDrawPath(context, kCGPathFillStroke);
-	
-	CGContextRestoreGState(context);
-
-	CGContextAddRect(context, box);
-	
-	CGContextDrawPath(context, kCGPathFillStroke);
+	// TODO 2: Add a drop shadow to your box. 20 points radius. No offset.
+ 
+	// TODO 3: Add a red border to your box. 5 points wide.
 }
 
 @end
