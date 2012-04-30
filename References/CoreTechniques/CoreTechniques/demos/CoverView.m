@@ -93,6 +93,15 @@
 	_currentPresentationState = CoverViewIsPresented;
 }
 
+- (void)animateAlongPath:(UIBezierPath *)path
+{
+	CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+	anim.duration = 4.0f;
+	anim.path = path.CGPath;
+	anim.calculationMode = kCAAnimationLinear;
+	[self.layer addAnimation:anim forKey:@"position"];
+}
+
 - (void)dismissCoverView
 {
 	CABasicAnimation *rotationAndScalingAnimation = [CABasicAnimation animationWithKeyPath:@"transform"];

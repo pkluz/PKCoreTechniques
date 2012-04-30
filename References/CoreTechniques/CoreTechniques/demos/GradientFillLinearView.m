@@ -28,11 +28,6 @@
 	
     CGGradientRelease(gradient);
     CGColorSpaceRelease(colorSpace);
-	
-	CGFloat yellow[4] = {1.0f, 1.0f, 0.0f, 1.0f};
-	CGContextSetFillColor(context, yellow);
-	CGRect yellowRect = CGRectMake(0.0f, 20.0f, 20.0f, 20.0f);
-	CGContextFillRect(context, yellowRect);
 }
 
 @end

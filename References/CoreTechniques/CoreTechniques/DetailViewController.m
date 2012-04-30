@@ -17,6 +17,7 @@
 #import "BezierCurveView.h"
 #import "ClippingView.h"
 #import "ClippingEOView.h"
+#import "CustomButtonView.h"
 
 // Demo Files for UIKit (Animation)
 #import "TapAndMoveView.h"
@@ -91,6 +92,10 @@
 		else if ([self.topic isEqualToString:@"Translation (Hit Test)"])
 		{
 			self.view = [[TapAndMoveViewWithHitTest alloc] initWithFrame:self.view.frame];
+		}
+		else if ([self.topic isEqualToString:@"Custom Button"])
+		{
+			self.view = [[CustomButtonView alloc] initWithFrame:self.view.frame];
 		}
 		else
 		{

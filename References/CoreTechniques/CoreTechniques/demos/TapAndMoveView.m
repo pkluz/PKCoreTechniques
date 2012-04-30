@@ -100,6 +100,4 @@ enum RedBoxPosition
 	}];
 }
 
-
-
 @end

@@ -97,10 +97,6 @@
 	[self.covers addObject:[[CoverView alloc] initWithFrame:CGRectMake(0.0f, verticalCenter, self.coverWidth, self.coverHeight)]];
 	[self.covers addObject:[[CoverView alloc] initWithFrame:CGRectMake(0.0f, verticalCenter, self.coverWidth, self.coverHeight)]];
 	[self.covers addObject:[[CoverView alloc] initWithFrame:CGRectMake(0.0f, verticalCenter, self.coverWidth, self.coverHeight)]];
-	[self.covers addObject:[[CoverView alloc] initWithFrame:CGRectMake(0.0f, verticalCenter, self.coverWidth, self.coverHeight)]];
-	[self.covers addObject:[[CoverView alloc] initWithFrame:CGRectMake(0.0f, verticalCenter, self.coverWidth, self.coverHeight)]];
-	[self.covers addObject:[[CoverView alloc] initWithFrame:CGRectMake(0.0f, verticalCenter, self.coverWidth, self.coverHeight)]];
-	[self.covers addObject:[[CoverView alloc] initWithFrame:CGRectMake(0.0f, verticalCenter, self.coverWidth, self.coverHeight)]];
 	
 	self.view.contentSize = CGSizeMake([self coverCount]*(self.coverWidth+self.coverSpacing), self.coverHeight);
 	

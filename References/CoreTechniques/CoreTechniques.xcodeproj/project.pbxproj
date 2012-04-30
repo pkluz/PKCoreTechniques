@@ -29,6 +29,8 @@
 		5E1C825D1520CD7400ABB2BD /* ClippingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C825C1520CD7400ABB2BD /* ClippingView.m */; };
 		5E1C82601520D24600ABB2BD /* ClippingEOView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1C825F1520D24600ABB2BD /* ClippingEOView.m */; };
 		5E1C826A1520D54600ABB2BD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5E1C82691520D54600ABB2BD /* LICENSE */; };
+		5E2CC9C8152AFB11005267E7 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2CC9C7152AFB11005267E7 /* CustomButton.m */; };
+		5E2CC9CB152AFB23005267E7 /* CustomButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2CC9CA152AFB23005267E7 /* CustomButtonView.m */; };
 		5E8D33191528FCE7004B7442 /* TapAndMoveViewWithHitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8D33181528FCE7004B7442 /* TapAndMoveViewWithHitTest.m */; };
 		5ED1BA32152289E200A62AA5 /* CoverFlowViewController~iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ED1BA31152289E200A62AA5 /* CoverFlowViewController~iPad.xib */; };
 		5ED2B8931522652F00CB9077 /* CoverFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED2B8921522652F00CB9077 /* CoverFlowView.m */; };
@@ -74,6 +76,10 @@
 		5E1C825E1520D24600ABB2BD /* ClippingEOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClippingEOView.h; path = demos/ClippingEOView.h; sourceTree = "<group>"; };
 		5E1C825F1520D24600ABB2BD /* ClippingEOView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClippingEOView.m; path = demos/ClippingEOView.m; sourceTree = "<group>"; };
 		5E1C82691520D54600ABB2BD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5E2CC9C6152AFB11005267E7 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomButton.h; path = demos/CustomButton.h; sourceTree = "<group>"; };
+		5E2CC9C7152AFB11005267E7 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomButton.m; path = demos/CustomButton.m; sourceTree = "<group>"; };
+		5E2CC9C9152AFB23005267E7 /* CustomButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomButtonView.h; path = demos/CustomButtonView.h; sourceTree = "<group>"; };
+		5E2CC9CA152AFB23005267E7 /* CustomButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomButtonView.m; path = demos/CustomButtonView.m; sourceTree = "<group>"; };
 		5E8D33171528FCE7004B7442 /* TapAndMoveViewWithHitTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TapAndMoveViewWithHitTest.h; path = demos/TapAndMoveViewWithHitTest.h; sourceTree = "<group>"; };
 		5E8D33181528FCE7004B7442 /* TapAndMoveViewWithHitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TapAndMoveViewWithHitTest.m; path = demos/TapAndMoveViewWithHitTest.m; sourceTree = "<group>"; };
 		5ED1BA31152289E200A62AA5 /* CoverFlowViewController~iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "CoverFlowViewController~iPad.xib"; path = "demos/CoverFlowViewController~iPad.xib"; sourceTree = "<group>"; };
@@ -267,6 +273,7 @@
 				5E1C82681520D3FC00ABB2BD /* Bezier Curves */,
 				5E1C82661520D3EA00ABB2BD /* Clipping */,
 				5E1C82671520D3F200ABB2BD /* Clipping (EO) */,
+				5E2CC9C4152AFAF3005267E7 /* Custom UIButton */,
 				5E1C82591520C8AC00ABB2BD /* tombraider.png */,
 			);
 			name = CoreGraphics;
@@ -278,6 +285,17 @@
 				5E8D331C15290C2F004B7442 /* CoverFlow */,
 			);
 			name = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		5E2CC9C4152AFAF3005267E7 /* Custom UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				5E2CC9C9152AFB23005267E7 /* CustomButtonView.h */,
+				5E2CC9CA152AFB23005267E7 /* CustomButtonView.m */,
+				5E2CC9C6152AFB11005267E7 /* CustomButton.h */,
+				5E2CC9C7152AFB11005267E7 /* CustomButton.m */,
+			);
+			name = "Custom UIButton";
 			sourceTree = "<group>";
 		};
 		5E8D331A1528FCEC004B7442 /* Translation */ = {
@@ -395,6 +413,8 @@
 				5ED2B896152266C700CB9077 /* CoverFlowViewController.m in Sources */,
 				5ED2B8991522699400CB9077 /* CoverView.m in Sources */,
 				5E8D33191528FCE7004B7442 /* TapAndMoveViewWithHitTest.m in Sources */,
+				5E2CC9C8152AFB11005267E7 /* CustomButton.m in Sources */,
+				5E2CC9CB152AFB23005267E7 /* CustomButtonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
