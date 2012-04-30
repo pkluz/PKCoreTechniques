@@ -2,15 +2,16 @@
 =======
 **Core Techniques** is the result of a presentation I held at the **Technical University of Munich** during the 'iOS Game Design Seminar 2012'. It serves as a hands-on introduction to the fundamental concepts of **CoreGraphics and CoreAnimation** on the iOS and OS X platforms.
 
-[![](http://nehira.com/rsc/upld/revealcontroller_img_1.png)](http://nehira.com/rsc/upld/revealcontroller_img_1.png)
-
 ## Structure
 =======
 The projects structure is fairly straight-forward and there's two possible points of entry. You can either take a look at the *CoreGraphics+AnimationForSuperheroes.pdf* document and check out a brief introduction into the main concepts of CoreGraphics and CoreAnimation or you can jump right into the code by opening the 'CoreGraphicsSeminar.xcworkspace' in the 'src' folder. There's two projects in the workspace, that you're very welcome to both improve and learn from.
 
 ## CoreTechniques
 =======
-... is a collection of various examples on how the most common techniques are implemented and used. Those include:
+
+[![](http://nehira.com/rsc/upld/reference2app.png)](http://nehira.com/rsc/upld/reference2app.png)
+**Core Techniques** is a collection of various examples on how the most common techniques are implemented and used. Those include:
+
 - Color Fill
 - Gradient Fill (Linear and Radial)
 - Simple Paths
@@ -23,6 +24,7 @@ The projects structure is fairly straight-forward and there's two possible point
 
 ## CoreBirdy
 =======
+[![](http://nehira.com/rsc/upld/reference1app.png)](http://nehira.com/rsc/upld/reference1app.png)
 CoreBirdy was primaryily made to test the performance of slightly more complex drawing on the iOS devices and the results fairly interesting. While in fact the drawing performance in Quartz _is_ slower than using an image in this case, it's still _very_ good. (Note: The Bezier curves are of fairly high degree! >20). 
 
 Please note that **CoreBirdy** is intended as an Anti-Example and should be looked at as such.
