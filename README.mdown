@@ -9,7 +9,7 @@ The projects structure is fairly straight-forward and there's two possible point
 ## CoreTechniques
 =======
 
-[![](http://nehira.com/rsc/upld/reference2app.png)](http://nehira.com/rsc/upld/reference2app.png)
+[![](http://dl.dropbox.com/u/8960813/github/reference2app.png)](http://dl.dropbox.com/u/8960813/github/reference2app.png)
 **Core Techniques** is a collection of various examples on how the most common techniques are implemented and used. Those include:
 
 - Color Fill
@@ -24,7 +24,7 @@ The projects structure is fairly straight-forward and there's two possible point
 
 ## CoreBirdy
 =======
-[![](http://nehira.com/rsc/upld/reference1app.png)](http://nehira.com/rsc/upld/reference1app.png)
+[![](http://dl.dropbox.com/u/8960813/github/reference1app.png)](http://dl.dropbox.com/u/8960813/github/reference1app.png)
 CoreBirdy was primarily made to test the performance of slightly more complex drawing on the iOS devices and the results were fairly interesting. While in fact the drawing performance in Quartz _is_ slower than using an image in this case, it's still _very_ good (and resolution independent!). (Note: The Bezier curves are of fairly high degree! >20). 
 
 Please note that **CoreBirdy** is intended as a proof-of-concept and should be regarded as such.
