@@ -1,4 +1,4 @@
-# Nehira.com's - CoreTechniques
+# PKCoreTechniques
 =======
 **Core Techniques** is the result of a presentation I held at the **Technical University of Munich** during the 'iOS Game Design Seminar 2012'. It serves as a hands-on introduction to the fundamental concepts of **CoreGraphics and CoreAnimation** on the iOS and OS X platforms.
 
